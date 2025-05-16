@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Basic syntax-->
+    <video src="bodh.mp4" controls width="400" height="500"></video>
+    <br>
+
+    <!--Multiple sourse-->
+    <video controls height =" 400" width ="400"  muted>
+        <!-- For multiple source use <source> </sourse> tag -->
+        <source src="vara.mp4" type="video/mp4"> </source> 
+        <source src="vara.mp4" type="video/webm"> </source>
+        your browser does not support HTML5 video.
+    </video>
+
+    <!-- Add Subtitles -->
+    <video controls width="500" height="400" autoplay muted >
+        <source src="bodh.mp4" type="video/mp4" >
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" > <!-- track tag use to show subtitles but you have to write own and no need closing tag-->
+        your browser does not support HTML5 video.
+    </video>
+</body>
+</html>

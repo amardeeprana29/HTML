@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Basic syntax -->
+    <form action="submit.php" method="post" target="_self" autocomplete="off" enctype="text/plain" novalidate>
+        <!-- Form control-->
+    </form>
+
+    <form action="submit.php" method="post" target="_self">
+        
+        <fieldset>  <!-- used to group related form element together-->
+            <legend>Personal Info</legend> <!-- Provide a caption/title for the group field inside <fieldset> -->
+
+        <!-- <label>: Link label with input using for attribute(which must match input's id
+            <input>: single line inputs )-->
+        <label for="first_name">First Name </label>
+        <input type="text" id="first_name" name="first_name">
+        <br>
+
+        <label for="second_name">Second Name</label>
+        <input type="text" id="second_name" name="second_name">
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+
+
+        <!-- <textarea>: multi-line text box -->
+        <label for="message">message</label>
+        <textarea name="message" id="message" rows="4" cols="40"></textarea>
+        <br>
+
+
+        <!-- <select> with <option> -->
+        <label for="education">Education</label>
+        <select name="education" id="education"> <!-- size = "2" multiple -->
+            <option value="master">Master</option>
+            <option value="ph.d">PH.D</option>
+            <option value="b.tech" selected>B.Tech</option>
+        </select> <br>
+        
+        </fieldset>
+
+
+        <!-- <button>: used to create clickable button on a web page -->
+        <button type="submit">Submit</button>
+        <br>
+
+        <input type="text" placeholder="enter name">
+        <button type="submit" disabled>Submit</button>  
+        <button type="reset" >Reset</button>  
+        <button type="button" autofocus onclick="alert('clicked')">Click me</button>
+        <br>
+
+        <!-- button with icon/text -->
+        <button>
+            <img src="image/favicon.ico" alt="icon" width="16"> Submit
+        </button>
+        <br>
+
+
+        <!-- <datalist> -->
+        <fieldset>
+            <legend>Browser</legend>
+            <input list="browser" name="browser" placeholder="choose browser">
+            <datalist id="browser">
+                <option value="chrome"></option>
+                <option value="Firebox"></option>
+                <option value="Safari"></option>
+                <option value="Edge"></option>
+            </datalist>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
